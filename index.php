@@ -1,1 +1,3 @@
-echo Hello World
+<?php
+echo 21;
+ ?>
