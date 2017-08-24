@@ -1,0 +1,30 @@
+h1
+{
+	color: navy;
+}
+
+a
+{
+	text-decoration: none;
+	color: maroon;
+	padding: 20px;
+}
+
+@keyframes rainbow
+{
+	0% {color: red;}
+	20% {color: orange;}
+	40% {color: yellow;}
+	60% {color: green;}
+	80% {color: blue;}
+	100% {color:red;}
+}
+
+a:hover
+{
+	/*animation-name: rainbow;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;*/
+	color: blue;
+}
