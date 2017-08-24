@@ -1,4 +1,4 @@
-@product-sans
+@product-sans 
 {
     font-family: prosans;
     src: url(https://fonts.gstatic.com/s/productsans/v9/HYvgU2fE2nRJvZ5JFAumwZS3E-kSBmtLoNJPDtbj2Pk.ttf);
@@ -25,7 +25,8 @@
 h1
 {
     color: #3399ff;
-    font-size: 100;
+    font-size: 65;
+    text-align: center;
     font-family: Comfortaa;
     animation-name: example;
     animation-duration: 4s;
@@ -40,8 +41,17 @@ h1
     top: 7%;
 }
 
-html
+body
 {
-    background: url(http://i.imgur.com/j3WLuXh.gif) no-repeat center center fixed;
-    background-size: cover;
+    background: url(ecr/fall17/per2/activity1/toad.gif) no-repeat center center fixed;
+    background-size:900px;
+    opacity: 1;
+}
+
+#rainbow
+{
+    animation-name: example2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
