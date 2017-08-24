@@ -1,0 +1,41 @@
+body
+{
+    background-color: #39f;
+}
+
+@keyframes multicolor
+{
+    0% {color: red;}
+    20% {color: orange;}
+    40% {color: yellow;}
+    60% {color: lime;}
+    80% {color: blue;}
+    100% {color:red;}
+}
+
+h1
+{
+    text-align:center;
+    font-family: Comfortaa;
+    font-size: 50px;
+    animation-name: multicolor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+img
+{
+    margin-left: 40%;
+    width: 200px;
+}
+
+div#prof
+{
+    color: white;
+}
+
+div#nonprof
+{
+    
+}
