@@ -7,8 +7,18 @@ function sleep(milliseconds) {
   }
 }
 
-for (var i = 0; i < 10; i++)
+function toggle()
 {
     document.getElementById("btnToggleInequality").click();
+}
+
+function fire()
+{
     document.getElementById("btnFireInequality").click();
+}
+
+for (var i = 0; i < 10; i++)
+{
+    setTimeout(function() { toggle(); }, 1000);
+    setTimeout(function() { fire(); }, 3000);
 }
