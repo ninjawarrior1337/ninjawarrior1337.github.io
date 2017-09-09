@@ -1,0 +1,50 @@
+div{
+    border: 2px solid black;
+    padding: 20px;
+    margin: 2px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+div::selection
+{
+    background-color: #2eff00;
+}
+
+#main
+{
+    background-color: #3355ff;
+}
+
+.head
+{
+    background-color: #3399ff;
+}
+
+.navbar
+{
+    background-color: #3388ff;
+}
+
+.cont
+{
+    background-color: #3377ff;
+}
+
+.foot
+{
+    background-color: #3366ff;
+}
+
+.navbar a
+{
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: grey;
+    padding: 10px;
+}
+
+.navbar a:hover
+{
+    background-color: white;
+}
