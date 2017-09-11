@@ -1,4 +1,30 @@
-.nav
-{
+div {
+    border: 2px solid #3399ff;
+    margin: 10px;
+}
 
+div.wrap
+{
+    height: 400px;
+    display: inline-block;
+}
+
+div.nav {
+    float: left;
+    width: 20%;
+    height: 200px;
+    position: relative;
+}
+
+div.cont {
+    width: 73%;
+    float: left;
+    margin: 10px auto;
+    position: relative;
+}
+
+div.foot {
+    margin-top: 10%;
+    clear: both;
+    position: relative;
 }
