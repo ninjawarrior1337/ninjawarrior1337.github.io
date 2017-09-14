@@ -1,0 +1,53 @@
+div {
+    border: 2px solid #3399ff;
+}
+
+div.head
+{
+    margin: 9px 10px;
+}
+
+div.wrap
+{
+    height: 400px;
+    display: inline-block;
+    width: 97%;
+}
+
+div.nav {
+    float: left;
+    width: 20%;
+    height: 300px;
+    margin: 10px;
+}
+
+div.nav a{
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+}
+
+div.nav ul
+{
+    text-decoration: underline;
+}
+
+div.nav a:hover
+{
+    background-color: lime
+}
+
+div.cont {
+    width: 75%;
+    float: right;
+    margin: 10px 9px;
+    height: 300px;
+}
+
+div.foot {
+    margin: 5px 10px;
+    padding-right: 40px;
+    clear: both;
+    position: relative;
+    text-align: center;
+}

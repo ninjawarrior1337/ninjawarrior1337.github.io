@@ -1,0 +1,48 @@
+@font-face
+{
+    font-family: amdrtg;
+    src: url(AMDRTG.ttf)
+}
+
+*
+{
+    margin: 0;
+    /* border: 2px solid #39f; */
+}
+
+div#nav
+{
+    display: inline-block;
+    background-color: #444;
+    width: 5%;
+    padding-bottom: 99.5%;
+}
+
+div#cont h1 
+{
+    font-family: amdrtg monospace;
+}
+
+#nav img
+{
+    width: 65px;
+    margin-right: 10px;
+}
+
+.mdi
+{
+    color: #3049FF;
+    font-size: 320%;
+    text-align: center;
+}
+.mdi :selection
+{
+    color: #00FF10
+}
+
+div#cont
+{
+    float: right;
+    width: 94%;
+    text-align: center;
+}
