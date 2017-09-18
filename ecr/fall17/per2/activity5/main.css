@@ -37,6 +37,10 @@ div#cont h1
     background-image: linear-gradient(to bottom, #3399ff, blue);
 }
 
+div#cont p{
+    text-align: justify;
+}
+
 #nav img
 {
     width: 65px;
@@ -58,6 +62,6 @@ div#cont h1
 div#cont
 {
     float: right;
-    width: 93%;
+    width: 94%;
     text-align: center;
 }
