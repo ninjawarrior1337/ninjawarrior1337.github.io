@@ -18,6 +18,11 @@ div#nav
     padding-bottom: 99.5%;
 }
 
+div#contnav
+{
+    background-color: #999;
+}
+
 div#nav a.gamesel
 {
     color: white;
@@ -27,6 +32,21 @@ div#nav a.gamesel
     margin-left: 4px;
 }
 
+#tube
+{
+    padding: 10px 5px;
+    width: 800px;
+    height: 400px;
+}
+
+div#cont
+{
+    background-color: #999;
+    display: table-cell;
+    float: right;
+    width: 94%;
+    text-align: center;
+}
 
 div#cont h1 
 {
@@ -37,8 +57,15 @@ div#cont h1
     background-image: linear-gradient(to bottom, #3399ff, blue);
 }
 
+div#cont h1 p#stars{
+    text-align: center;
+    color: gold;
+}
+
 div#cont p{
     text-align: justify;
+    font-family: monospace;
+
 }
 
 #nav img
@@ -57,11 +84,4 @@ div#cont p{
 .mdi :selection
 {
     color: #00FF10
-}
-
-div#cont
-{
-    float: right;
-    width: 94%;
-    text-align: center;
 }
