@@ -1,0 +1,51 @@
+@font-face {
+    font-family: amdrtg;
+    src: url("AMDRTG.ttf")
+}
+
+@keyframes example {
+    0%   {color: #A56900;}
+    20% {color: orange;}
+    40% {color: yellow;}
+    60%   {color: green;}
+    80% {color: #3399ff;}
+    100% {color: #A56900;}
+}
+
+#title {
+    text-align: center;
+    color: #BDBD00;
+    font-family: AMDRTG;
+}
+
+body {
+    background: url("https://ninjawarrior1337.github.io/ecr/fall17/per2/activity1/toad.gif") no-repeat center center fixed;
+    background-size: 500px;
+    background-color: #E51700;
+}
+
+#foot {
+    font-size: 20px;
+    text-align: center;
+    color: #432900;
+    font-family: "Comfortaa";
+    background-color: #A56900;  
+    padding: 10px;  
+}
+
+#foot a
+{
+    text-decoration: none;
+    color: #A19452;
+}
+
+#Subtitle
+{
+    text-align: center;
+    font-family: "Comic Sans MS";
+    font-size: 40px;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
