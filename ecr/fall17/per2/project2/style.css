@@ -1,8 +1,18 @@
-*
+body
 {
-    background-color: #999;    
+    background-color: #959595
 }
-#wrapper
-{
-    margin: 0px auto;
+
+#wrapper a{
+    /* display: inline-block;     */
+}
+
+#wrapper a img{
+    vertical-align: top;
+    padding: .5%; 
+    border-radius: 5%;  
+}
+
+#wrapper a img:hover{
+    background-color: #3399ff
 }
