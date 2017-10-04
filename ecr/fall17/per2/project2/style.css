@@ -3,6 +3,13 @@ body
     background-color: #959595
 }
 
+#wrapper
+{
+    width: 50%;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
 #wrapper a{
     /* display: inline-block;     */
 }
