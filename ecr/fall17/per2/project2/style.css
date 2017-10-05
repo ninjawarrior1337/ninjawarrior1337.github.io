@@ -1,0 +1,41 @@
+body
+{
+    background-color: #959595
+}
+
+@media(max-width: 1200px)
+{
+    #wrapper a img
+    {
+        width: 49%;
+    }
+}
+
+@media(max-width: 800px)
+{
+    #wrapper a img{
+        width: 19%;
+    }
+}
+
+#wrapper
+{
+    /* width: 75%; */
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+#wrapper a{
+    /* display: inline-block;     */
+}
+
+#wrapper a img{
+    vertical-align: top;
+    padding: .5%; 
+    border-radius: 5%;
+    width: 256px;  
+}
+
+#wrapper a img:hover{
+    background-color: #3399ff
+}
