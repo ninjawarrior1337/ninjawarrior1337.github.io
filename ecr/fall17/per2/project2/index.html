@@ -4,24 +4,34 @@
 <head>
     <title>Image Gallery</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
+    <link rel="stylesheet" href="lightbox/css/lightbox.css">
 
 </head>
 
 <body>
-    <div id="wrapper"><a href="thumbs/image-01.png" data-lightbox="bacteria" data-title="Bacteria"><img src="thumbs/image-01.png" alt=""></a>
-        <a
-            href="thumbs/image-02.png" data-lightbox="bacteria" data-title="Bacteria"><img src="thumbs/image-02.png" alt=""></a><a href="thumbs/image-03.png" data-lightbox="us-flag" data-title="US Flag"><img src="thumbs/image-03.png" alt=""></a>
-            <a
-                href="thumbs/image-04.png" data-lightbox="deer-antler" data-title="Deer Antlers"><img src="thumbs/image-04.png" alt=""></a><a href="thumbs/image-05.png" data-lightbox="bird" data-title="Green Bird"><img src="thumbs/image-05.png" alt=""></a>
-                <a
-                    href="thumbs/image-06.png" data-lightbox="bird" data-title="White Bird"><img src="thumbs/image-06.png" alt=""></a><a href="thumbs/image-07.png" data-lightbox="butterfly" data-title="Butterfly"><img src="thumbs/image-07.png" alt=""></a>
-                    <a
-                        href="thumbs/image-08.png" data-lightbox="plant" data-title="Some plant"><img src="thumbs/image-08.png" alt=""></a><a href="thumbs/image-09.png" data-lightbox="plant" data-title="Pineapple"><img src="thumbs/image-09.png" alt=""></a>
-                        <a
-                            href="thumbs/image-10.png" data-lightbox="penguin" data-title="Penguin"><img src="thumbs/image-10.png" alt=""></a>
+    <div id="wrapper">
+        <a href="images/image-01-thumb.png" data-lightbox="bacterium" data-title=""><img src="images/image-01-thumb.png" alt=""></a>
+        <a href="images/image-02-thumb.png" data-lightbox="bacterium" data-title=""><img src="images/image-02-thumb.png" alt=""></a>
+        <a href="images/image-03-thumb.png" data-lightbox="bacterium" data-title=""><img src="images/image-03-thumb.png" alt=""></a>
+        <a href="images/image-04-thumb.png" data-lightbox="bacterium" data-title=""><img src="images/image-04-thumb.png" alt=""></a>
+        <a href="images/image-05-thumb.png" data-lightbox="bacterium" data-title=""><img src="images/image-05-thumb.png" alt=""></a>
+        <a href="images/image-06-thumb.png" data-lightbox="bacterium" data-title=""><img src="images/image-06-thumb.png" alt=""></a>
+        <a href="images/image-07-thumb.png" data-lightbox="bacterium" data-title=""><img src="images/image-07-thumb.png" alt=""></a>
+        <a href="images/image-08-thumb.png" data-lightbox="bacterium" data-title=""><img src="images/image-08-thumb.png" alt=""></a>
+        <a href="images/image-09-thumb.png" data-lightbox="bacterium" data-title=""><img src="images/image-09-thumb.png" alt=""></a>
+        <a href="images/image-10-thumb.png" data-lightbox="bacterium" data-title=""><img src="images/image-10-thumb.png" alt=""></a>
+        <a href="images/image-11-thumb.png" data-lightbox="bacterium" data-title=""><img src="images/image-11-thumb.png" alt=""></a>
+        <a href="images/image-12-thumb.png" data-lightbox="bacterium" data-title=""><img src="images/image-12-thumb.png" alt=""></a>
     </div>
     <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'fadeDuration': 200,
+            'imageFadeDuration': 0
+        })
+    </script>
 </body>
 
 </html>
