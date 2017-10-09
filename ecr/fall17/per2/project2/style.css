@@ -3,39 +3,53 @@ body
     background-color: #959595
 }
 
-@media(max-width: 1200px)
-{
-    #wrapper a img
-    {
-        width: 49%;
-    }
-}
-
-@media(max-width: 800px)
-{
-    #wrapper a img{
-        width: 19%;
-    }
-}
-
 #wrapper
 {
     /* width: 75%; */
     /* text-align: center; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
-#wrapper a{
-    /* display: inline-block;     */
+#wrapper{
+    width: 99%;
 }
 
 #wrapper a img{
     vertical-align: top;
     padding: .5%; 
     border-radius: 5%;
-    width: 256px;  
 }
 
 #wrapper a img:hover{
     background-color: #3399ff
+}
+
+@media (min-width: 1200px), (min-device-width: 1200px)
+{
+    #wrapper a img
+    {
+        width: 15%;        
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px), (min-device-width: 800px) and (max-device-width: 1200px)
+{
+    #wrapper a img{
+        width: 20%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 800px), (min-device-width: 400px) and (max-device-width: 800px)
+{
+    #wrapper a img{
+        width: 40%;
+    }
+    
+}
+
+@media (max-width: 400px), (max-device-width: 400px)
+{
+    #wrapper a img{
+        width: 50%;
+    }
 }
