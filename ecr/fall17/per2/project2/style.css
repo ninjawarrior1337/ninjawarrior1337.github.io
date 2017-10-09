@@ -1,6 +1,28 @@
+@font-face {
+    font-family: amdrtg;
+    src: url("AMDRTG.ttf")
+}
+
+@keyframes title {
+    0% {font-size: 2em}
+    50% {font-size: 2.5em}
+    100% {font-size: 2em}
+}
+
 body
 {
     background-color: #959595
+}
+
+h1{
+    font-family: amdrtg;
+    /* font-size: 2em; */
+
+    animation-name: title;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 #wrapper
