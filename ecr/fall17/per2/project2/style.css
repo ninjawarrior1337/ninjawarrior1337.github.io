@@ -7,11 +7,11 @@ body
 {
     /* width: 75%; */
     /* text-align: center; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
-#wrapper a{
-
+#wrapper{
+    width: 99%;
 }
 
 #wrapper a img{
@@ -24,24 +24,32 @@ body
     background-color: #3399ff
 }
 
-@media (min-width: 1200px)
+@media (min-width: 1200px), (min-device-width: 1200px)
 {
     #wrapper a img
     {
-        width: 2047px;
+        width: 15%;        
     }
 }
 
-@media (min-width: 800px)
+@media (min-width: 800px) and (max-width: 1200px), (min-device-width: 800px) and (max-device-width: 1200px)
 {
     #wrapper a img{
-        width: 1023px;
+        width: 20%;
     }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 400px) and (max-width: 800px), (min-device-width: 400px) and (max-device-width: 800px)
+{
     #wrapper a img{
-        width: 255px;
+        width: 40%;
     }
     
+}
+
+@media (max-width: 400px), (max-device-width: 400px)
+{
+    #wrapper a img{
+        width: 50%;
+    }
 }
