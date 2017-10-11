@@ -8,3 +8,4 @@ function winGame()
 }
 
 gameTimer = setInterval(winGame, 500)
+
