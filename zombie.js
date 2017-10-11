@@ -1,16 +1,11 @@
-function toggle() {
+numInequalities = 99999999999
+var gameTimer;
+
+function winGame()
+{
     document.getElementById("btnToggleInequality").click();
+    document.getElementById("btnFireInequality").click();
 }
 
-function fire() {
-    hittestInequality();
-}
+gameTimer = setInterval(winGame, 500)
 
-for (var i = 0; i < 10; i++) {
-    setTimeout(function() {
-        toggle();
-    }, 1000);
-    setTimeout(function() {
-        fire();
-    }, 3000);
-}
