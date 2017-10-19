@@ -1,0 +1,18 @@
+/* #wrapper{
+    border: 10px solid black;
+} */
+h1
+{
+    text-align: center;
+}
+
+#wrapper{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+}
+
+#more{
+    cursor: pointer;
+    position: relative;
+}

@@ -1,0 +1,31 @@
+body{
+	background-color: black;
+}
+
+#gameWindow{
+	position: relative;
+	width: 500px;
+	height: 300px;
+	margin: 0 auto;
+	background-color: white;
+	overflow: hidden;
+	cursor: url("crosshair.gif"), crosshair;
+}
+
+#output
+{
+	color: white;
+	padding: 20px;
+	font-size: 30px;
+	user-select: none;
+}
+
+.monkey{
+   width: 80px;
+   height: 80px;
+   position: absolute;
+   z-index: 10;
+   background: url('monkey.png');
+   background-size: 80px 80px;
+   user-select: none;
+}

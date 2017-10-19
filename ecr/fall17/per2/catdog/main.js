@@ -19,11 +19,13 @@ function checkIfChecked()
         if (endlessCheck) {
             clearInterval(endlessCheck);
         }
-        endlessCheck = setInterval(move, 1);
+        endlessCheck = setInterval(function(){ move(); }, 0);
+        console.log(true);
     }
     else
     {
         clearInterval(endlessCheck);
+        console.log(false);
     }
 }
 
@@ -45,6 +47,8 @@ function move()
     catY = Math.floor(Math.random()*270);
     dogX = Math.floor(Math.random()*411);
     dogY = Math.floor(Math.random()*270);
+
+    dog.style.width = Math.floor(Math.random()*401)
 
     setCatCoord(catX, catY);
     setDogCoord(dogX, dogY);
