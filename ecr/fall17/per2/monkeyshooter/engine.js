@@ -20,7 +20,7 @@ function reloacate(){
     var x = Math.floor(Math.random()*421)
     monkey0.style.left = x + "px";
     monkey0.style.top = "260px";
-    y = 400;
+    y = 300;
 }
 
 function hitMonkey()
@@ -31,7 +31,7 @@ function hitMonkey()
 }
 
 function loop(){
-    var y = parseInt(monkey0.style.top) - 5;
+    var y = parseInt(monkey0.style.top) - 1 - hitVal;
     if ( y < -100 )
         {
             reloacate();
