@@ -1,7 +1,13 @@
 var imgPlayer;
+
 var btnRock;
 var btnPaper;
 var btnScissors;
+
+var btnRockC;
+var btnPaperC;
+var btnScissorsC;
+
 var btnGo;
 var selectionmade;
 
@@ -13,6 +19,11 @@ function init(){
 	btnRock = document.getElementById("btnRock");
 	btnPaper = document.getElementById("btnPaper");
 	btnScissors = document.getElementById("btnScissors");
+					      
+	btnRockC = document.getElementById("lblRock");
+	btnPaperC = document.getElementById("lblPaper");
+	btnScissorsC = document.getElementById("lblScissors");
+	
 	btnGo = document.getElementById("btnGo");
 	deselectAll();
 }
@@ -22,6 +33,11 @@ function deselectAll()
 	btnPaper.style.backgroundColor = 'silver';
 	btnRock.style.backgroundColor = 'silver';
 	btnScissors.style.backgroundColor = 'silver';
+	
+	btnPaperC.style.backgroundColor = 'silver';
+	btnRockC.style.backgroundColor = 'silver';
+	btnScissorsC.style.backgroundColor = 'silver';
+	
 	btnGo.style.visibility = 'hidden';
 	playerChoice = null;
 }
@@ -67,14 +83,24 @@ function go()
 	if(numChoice == 0) {
 		computerChoice = 'rock';
 		imgComputer.src = 'images/rock.png';
+		btnRockC.style.backgroundColor = "#FFFF00";
+		btnPaperC.style.backgroundColor = "silver";
+		btnScissorsC.style.backgroundColor = "silver";
+
 	}
 	if(numChoice == 1){
 		computerChoice = 'paper';
-		imgComputer.src = 'images/rock.png';
+		imgComputer.src = 'images/paper.png';
+		btnRockC.style.backgroundColor = "silver";
+		btnPaperC.style.backgroundColor = "#FFFF00";
+		btnScissorsC.style.backgroundColor = "silver";
 	};
 	if(numChoice == 2) {
 		computerChoice = 'scissors';
-		imgComputer.src = "images/rock.png";
+		imgComputer.src = "images/scissors.png";
+		btnRockC.style.backgroundColor = "silver";
+		btnPaperC.style.backgroundColor = "silver";
+		btnScissorsC.style.backgroundColor = "#FFFF00";
 };
 
 
