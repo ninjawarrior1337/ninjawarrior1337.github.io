@@ -14,8 +14,8 @@ function move()
     buttonX = Math.floor(Math.random()*windwidth);
     buttonY = Math.floor(Math.random()*windheight);
 
-    more.style.marginLeft = buttonX + "px";
-    more.style.marginTop = buttonY + "px";
+    more.style.left = buttonX + "px";
+    more.style.top = buttonY + "px";
 }
 
 // setInterval(function(){
