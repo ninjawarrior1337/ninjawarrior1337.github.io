@@ -10,9 +10,17 @@ h1
     position: absolute;
     width: 90%;
     height: 90%;
+    background: url("x.png") no-repeat center center fixed;
 }
 
 #more{
     cursor: pointer;
     position: relative;
+    left: 50%;
+}
+
+footer
+{
+    text-align: center;
+    font-size: 1px;
 }
