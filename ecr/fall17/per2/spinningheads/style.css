@@ -1,0 +1,19 @@
+body
+{
+	background-color: #3399ff;
+}
+
+h1
+{
+	text-align: center;
+	user-select: none;
+}
+
+div.heads
+{
+	width: 400px;
+	height: 400px;
+	background-image: url('sprites.png');
+	background-position: 000px 000px;
+	border: 5px solid black;
+}
