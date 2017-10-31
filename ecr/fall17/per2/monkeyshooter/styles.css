@@ -25,7 +25,7 @@ body{
    height: 80px;
    position: absolute;
    z-index: 10;
-   background: url('monkey.png');
+   background-image: url('monkey.png');
    background-size: 80px 80px;
    user-select: none;
 }

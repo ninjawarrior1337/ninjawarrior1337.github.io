@@ -25,7 +25,6 @@ function reloacate(){
     monkey0.style.left = x + "px";
     monkey0.style.top = "260px";
     y = 300;
-    monkey0.style.background = "url('monkey.png')";    
     if(dedMonkeys == 4)
     {
         endGame(false);
@@ -48,6 +47,7 @@ function loop(){
     y = parseInt(monkey0.style.top) - 1 - Math.pow(parseInt(hitVal), 2);
     if ( y < -100 )
         {
+            monkey0.style.backgroundImage = "url('monkey.png')";                           
             reloacate();
             dedMonkeys++;
             console.log("Ded Monkeys: " + dedMonkeys);
@@ -55,7 +55,7 @@ function loop(){
         }
         else
         {
-            monkey0.style.top = y + "px";                
+            monkey0.style.top = y + "px";
         }
 }
 
