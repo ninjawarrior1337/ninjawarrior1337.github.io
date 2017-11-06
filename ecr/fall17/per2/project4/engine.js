@@ -4,6 +4,8 @@ var output;
 var hitVal = 0;
 var dedMonkeys = 0;
 
+var winAudio = new Audio('complete.ogg');
+
 function init(){
     monkey0 = document.getElementById("monkey0");
     output = document.getElementById("output");
@@ -39,7 +41,6 @@ function hitMonkey()
 {
     hitVal++;
     output.innerHTML = "Score: " + hitVal;
-    monkey0.style.background = "url('explode.gif')";
     reloacate();
 }
 
@@ -63,6 +64,7 @@ function endGame(win)
 {
     if(win)
     {
+        winAudio.play();        
         alert("You Win!");
         location.reload();
     }
