@@ -11,7 +11,7 @@ function init() {
 	heads = document.getElementsByClassName("heads");
 	headsArray = Array.from(heads);
 
-	headsArray.forEach(function(element){
+	headsArray.forEach(function (element) {
 		element.setAttribute("scared", false);
 	})
 
@@ -19,40 +19,40 @@ function init() {
 		element.style.backgroundPosition = "0px 0px";
 	});
 
+	var whispering = new Audio("whispering.mp3")
+	whispering.volume = 0.8;
+	whispering.play();
+
+	whispering.addEventListener("ended", function () {
+		this.currentTime = 0;
+		this.play();
+	})
+
+
 	scared();
 
-	animationTimer = setInterval(function () 
-	{
+	animationTimer = setInterval(function () {
 		var newX = parseInt(head00.style.backgroundPositionX);
-		if (newX == +3200) 
-		{
+		if (newX == +3200) {
 			newX = 400;
-		} 
-		else 
-		{
+		} else {
 			newX += 400;
 		}
 		spin(newX);
 
-		headsArray.forEach(function (element) 
-		{
-			
+		headsArray.forEach(function (element) {
+
 		})
 
 	}, 100);
 }
 
 function spin(nextVal) {
-
-	headsArray.forEach(function (element) 
-	{
-		if (element.getAttribute("scared") == "true") 
-		{
+	headsArray.forEach(function (element) {
+		if (element.getAttribute("scared") == "true") {
 			element.style.backgroundPositionX = nextVal + "px";
 			element.style.backgroundPositionY = -400 + "px";
-		} 
-		else 
-		{
+		} else {
 			element.style.backgroundPositionX = nextVal + "px";
 			element.style.backgroundPositionY = 0 + "px";
 		}
@@ -68,12 +68,24 @@ function scared() {
 
 		headsArray[selectHead].setAttribute("scared", true);
 
+		if (selectHead % 2 == 0) {
+			var manScream = new Audio("manScream.mp3");
+			manScream.volume = 0.1;
+			manScream.play();
+		} else {
+			var womanScream = new Audio("womanScream.mp3");
+			womanScream.volume = 0.1;
+			womanScream.play();
+		}
+
 		scared();
 
 	}, randomTime)
 }
 
 function headClick(headId) {
-	if (headId.getAttribute("scared") == "true")
+	if (headId.getAttribute("scared") == "true") {
+		new Audio("heartbeat.mp3").play();
 		headId.setAttribute("scared", false);
+	}
 }
