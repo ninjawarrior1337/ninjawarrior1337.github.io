@@ -4,6 +4,8 @@ var output;
 var hitVal = 0;
 var dedMonkeys = 0;
 
+var winAudio = new Audio('complete.ogg');
+
 function init(){
     monkey0 = document.getElementById("monkey0");
     output = document.getElementById("output");
@@ -25,7 +27,6 @@ function reloacate(){
     monkey0.style.left = x + "px";
     monkey0.style.top = "260px";
     y = 300;
-    monkey0.style.background = "url('monkey.png')";    
     if(dedMonkeys == 4)
     {
         endGame(false);
@@ -40,7 +41,6 @@ function hitMonkey()
 {
     hitVal++;
     output.innerHTML = "Score: " + hitVal;
-    monkey0.style.background = "url('explode.gif')";
     reloacate();
 }
 
@@ -48,6 +48,7 @@ function loop(){
     y = parseInt(monkey0.style.top) - 1 - Math.pow(parseInt(hitVal), 2);
     if ( y < -100 )
         {
+            monkey0.style.backgroundImage = "url('monkey.png')";                           
             reloacate();
             dedMonkeys++;
             console.log("Ded Monkeys: " + dedMonkeys);
@@ -55,7 +56,7 @@ function loop(){
         }
         else
         {
-            monkey0.style.top = y + "px";                
+            monkey0.style.top = y + "px";
         }
 }
 
@@ -63,6 +64,7 @@ function endGame(win)
 {
     if(win)
     {
+        winAudio.play();        
         alert("You Win!");
         location.reload();
     }

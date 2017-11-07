@@ -1,0 +1,74 @@
+body
+{
+	background-color: #3399ff;
+}
+
+h1
+{
+	text-align: center;
+	user-select: none;
+}
+
+/* #head00
+{
+	width: 400px;
+	height: 400px;
+	background-image: url('jake.png');
+	background-position: 000px 000px;
+	border: 1px solid black;
+}
+
+#head01
+{
+	width: 400px;
+	height: 400px;
+	background-image: url('sprites.png');
+	background-position: 000px 000px;
+	border: 1px solid black;
+}
+
+#head02
+{
+	width: 400px;
+	height: 400px;
+	background-image: url('sprites.png');
+	background-position: 000px 000px;
+	border: 1px solid black;
+}
+
+#head03
+{
+	width: 400px;
+	height: 400px;
+	background-image: url('sprites.png');
+	background-position: 000px 000px;
+	border: 1px solid black;
+}
+
+#head04
+{
+	width: 400px;
+	height: 400px;
+	background-image: url('sprites.png');
+	background-position: 000px 000px;
+	border: 1px solid black;
+}
+
+#head05
+{
+	width: 400px;
+	height: 400px;
+	background-image: url('sprites.png');
+	background-position: 000px 000px;
+	border: 1px solid black;
+} */
+
+div.heads
+{
+	width: 400px;
+	height: 400px;
+	background-image: url('jake.png');
+	background-position: 000px 000px;
+	border: 1px solid black;
+	display: inline-block;
+}
