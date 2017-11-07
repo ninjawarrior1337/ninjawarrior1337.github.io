@@ -70,4 +70,5 @@ div.heads
 	background-image: url('jake.png');
 	background-position: 000px 000px;
 	border: 1px solid black;
+	display: inline-block;
 }
