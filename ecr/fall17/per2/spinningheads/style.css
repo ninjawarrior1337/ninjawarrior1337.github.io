@@ -1,6 +1,7 @@
 body
 {
 	background-color: #3399ff;
+	cursor: url("heart.png") 16 16, default;
 }
 
 h1
@@ -9,11 +10,11 @@ h1
 	user-select: none;
 }
 
-/* #head00
+#head00
 {
 	width: 400px;
 	height: 400px;
-	background-image: url('jake.png');
+	background-image: url('allen.png');
 	background-position: 000px 000px;
 	border: 1px solid black;
 }
@@ -22,7 +23,7 @@ h1
 {
 	width: 400px;
 	height: 400px;
-	background-image: url('sprites.png');
+	background-image: url('cole.png');
 	background-position: 000px 000px;
 	border: 1px solid black;
 }
@@ -31,7 +32,7 @@ h1
 {
 	width: 400px;
 	height: 400px;
-	background-image: url('sprites.png');
+	background-image: url('dominick.png');
 	background-position: 000px 000px;
 	border: 1px solid black;
 }
@@ -40,7 +41,7 @@ h1
 {
 	width: 400px;
 	height: 400px;
-	background-image: url('sprites.png');
+	background-image: url('ethan.png');
 	background-position: 000px 000px;
 	border: 1px solid black;
 }
@@ -49,7 +50,7 @@ h1
 {
 	width: 400px;
 	height: 400px;
-	background-image: url('sprites.png');
+	background-image: url('ziming.png');
 	background-position: 000px 000px;
 	border: 1px solid black;
 }
@@ -58,10 +59,10 @@ h1
 {
 	width: 400px;
 	height: 400px;
-	background-image: url('sprites.png');
+	background-image: url('erfan.png');
 	background-position: 000px 000px;
 	border: 1px solid black;
-} */
+}
 
 div.heads
 {
