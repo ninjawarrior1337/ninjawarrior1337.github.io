@@ -64,19 +64,20 @@ function scared() {
 
 	scaredTimer = setTimeout(function () {
 		selectHead = Math.floor(Math.random() * 6)
+
 		randomTime = Math.floor(Math.random() * 2000 + 1000)
-
-		headsArray[selectHead].setAttribute("scared", true);
-
-		if (selectHead % 2 == 0) {
-			var manScream = new Audio("manScream.mp3");
-			manScream.volume = 0.1;
-			manScream.play();
-		} else {
-			var womanScream = new Audio("womanScream.mp3");
-			womanScream.volume = 0.1;
-			womanScream.play();
+		if (headsArray[selectHead].getAttribute("scared") == "false") {
+			if (selectHead % 2 == 0) {
+				var manScream = new Audio("manScream.mp3");
+				manScream.volume = 0.1;
+				manScream.play();
+			} else {
+				var womanScream = new Audio("womanScream.mp3");
+				womanScream.volume = 0.1;
+				womanScream.play();
+			}
 		}
+		headsArray[selectHead].setAttribute("scared", true);
 
 		scared();
 
