@@ -1,65 +1,61 @@
-function getEId(str) {
-    return document.getElementById(str)
-}
+var title = $('#title');
 
-var title = document.getElementById("title");
+var imgActor = $("#imgActor");
 
-var imgActor = document.getElementById("imgActor");
+var content = $("#content");
 
-var content = document.getElementById("content");
+var jb = $("#Jesse");
+var hb = $("#Hank");
+var wb = $("#Walt");
 
-var jb = document.getElementById("Jesse");
-var hb = getEId("Hank");
-var wb = getEId("Walt");
-
-var stats = document.getElementById("stats");
-var kills = document.getElementById("kills");
-var hotness = document.getElementById("hotness");
-var worth = document.getElementById("worth");
+var stats = $("#stats");
+var kills = $("#kills");
+var hotness = $("#hotness");
+var worth = $("#worth");
 
 function updateStats(name) {
     if (name == 'Walt') {
-        kills.innerHTML = "Kills: 21";
-        hotness.innerHTML = "Hotness: 7.8";
-        worth.innerHTML = "Worth: $8.5B"
+        kills.html("Kills: 21");
+        hotness.html("Hotness: 7.8");
+        worth.html("Worth: $8.5B");
     }
 
     if (name == 'Jesse') {
-        kills.innerHTML = "Kills: 10";
-        hotness.innerHTML = "Hotness: 4.9";
-        worth.innerHTML = "Worth: $1";
+        kills.html("Kills: 10");
+        hotness.html("Hotness: 4.9");
+        worth.html("Worth: $1");
     }
 
     if (name == 'Hank') {
-        kills.innerHTML = "Kills: 4";
-        hotness.innerHTML = "Hotness: 2.1";
-        worth.innerHTML = "Worth: $10K"
+        kills.html("Kills: 4");
+        hotness.html("Hotness: 2.1");
+        worth.html("Worth: $10K");
     }
 }
 
 function changeColor(name) {
     if (name == 'Walt') {
-        wb.style.color = "blue"
-        jb.style.color = null;
-        hb.style.color = null;
+        wb.css("color", "blue");
+        jb.css("color", null);
+        hb.css("color", null);
 
-        title.style.color = "white";
+        title.css("color", "white");
     }
 
     if (name == 'Hank') {
-        wb.style.color = null;
-        jb.style.color = null;
-        hb.style.color = "blue";
+        wb.css("color", null);
+        jb.css("color", null);
+        hb.css("color", "blue");
 
         title.style.color = "black";
     }
 
     if (name == 'Jesse') {
-        wb.style.color = null;
-        jb.style.color = "blue";
-        hb.style.color = null;
+        wb.css("color", null);
+        jb.css("color", "blue");
+        hb.css("color", null);
 
-        title.style.color = "white";
+        title.css("color", "white");
     }
 }
 
@@ -78,10 +74,10 @@ function changeColor(name) {
 
 function updateInfo(name) {
     if (name == 'Walt') {
-        title.innerHTML = "Walt";
-        imgActor.src = name + ".jpg";
-        content.style.backgroundColor = "navy";
-        stats.style.color = "aqua";
+        title.html(name);
+        imgActor.attr("src", name + ".jpg");
+        content.css("background-color", "navy");
+        stats.css("color", "aqua");
         changeColor(name);
         updateStats(name);
     }
@@ -89,7 +85,7 @@ function updateInfo(name) {
     if (name == 'Jesse') {
         title.innerHTML = "Jesse";
         imgActor.src = name + ".jpg";
-        content.style.backgroundColor = "pink";
+        content.css("background-color", "pink");
         stats.style.color = "navy";
         changeColor(name);
         updateStats(name);
