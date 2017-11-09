@@ -13,6 +13,13 @@ var kills = $("#kills");
 var hotness = $("#hotness");
 var worth = $("#worth");
 
+function init()
+{
+    $("body").hide();
+    updateInfo("Walt");
+    $("body").fadeIn(750);
+}
+
 function updateStats(name) {
     if (name == 'Walt') {
         kills.html("Kills: 21");
