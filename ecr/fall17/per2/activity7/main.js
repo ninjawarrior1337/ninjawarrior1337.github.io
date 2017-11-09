@@ -13,6 +13,13 @@ var kills = $("#kills");
 var hotness = $("#hotness");
 var worth = $("#worth");
 
+function init()
+{
+    $("body").hide();
+    updateInfo("Walt");
+    $("body").fadeIn(750);
+}
+
 function updateStats(name) {
     if (name == 'Walt') {
         kills.html("Kills: 21");
@@ -47,7 +54,7 @@ function changeColor(name) {
         jb.css("color", null);
         hb.css("color", "blue");
 
-        title.style.color = "black";
+        title.css("color", "black");
     }
 
     if (name == 'Jesse') {
@@ -83,19 +90,19 @@ function updateInfo(name) {
     }
 
     if (name == 'Jesse') {
-        title.innerHTML = "Jesse";
-        imgActor.src = name + ".jpg";
+        title.html(name);
+        imgActor.attr("src", name + ".jpg");
         content.css("background-color", "pink");
-        stats.style.color = "navy";
+        stats.css("color", "navy");
         changeColor(name);
         updateStats(name);
     }
 
     if (name == 'Hank') {
-        title.innerHTML = name;
-        imgActor.src = name + ".jpg";
-        content.style.backgroundColor = "lavender";
-        stats.style.color = "navy";
+        title.html(name);
+        imgActor.attr("src", name + ".jpg") ;
+        content.css("background-color", "lavender");
+        stats.css("color", "navy");
         changeColor(name);
         updateStats(name);
     }
