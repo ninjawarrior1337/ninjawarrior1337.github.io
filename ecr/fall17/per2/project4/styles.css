@@ -12,7 +12,14 @@ body{
 	cursor: url("crosshair.gif"), crosshair;
 }
 
-#output
+#killed
+{
+	color: white;
+	padding: 20px;
+	font-size: 30px;
+	user-select: none;
+}
+#lives
 {
 	color: white;
 	padding: 20px;

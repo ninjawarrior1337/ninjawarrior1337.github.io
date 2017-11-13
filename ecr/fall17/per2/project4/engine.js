@@ -3,12 +3,15 @@ var gameTime;
 var output;
 var hitVal = 0;
 var dedMonkeys = 0;
+var livesVal = 5;
 
 var winAudio = new Audio('complete.ogg');
 
 function init(){
     monkey0 = document.getElementById("monkey0");
-    output = document.getElementById("output");
+    output = document.getElementById("killed");
+    lives = document.getElementById("lives");
+
     
     dedMonkeys = 0;
     hitVal = 0;
@@ -29,11 +32,17 @@ function reloacate(){
     y = 300;
     if(dedMonkeys == 4)
     {
-        endGame(false);
+        lives.innerHTML = "Lives: 0";     
+        setTimeout(function(){
+            endGame(false);
+        }, 100)
     }
     if(hitVal == 3)
     {
-        endGame(true)
+        output.innerHTML = "Score: 3";        
+        setTimeout(function(){
+            endGame(true);
+        }, 100)
     }
 }
 
@@ -51,6 +60,8 @@ function loop(){
             monkey0.style.backgroundImage = "url('monkey.png')";                           
             reloacate();
             dedMonkeys++;
+            livesVal -= 1;
+            lives.innerHTML = "Lives: " + livesVal;
             console.log("Ded Monkeys: " + dedMonkeys);
             console.log("HitVal: " + hitVal);
         }
@@ -64,7 +75,7 @@ function endGame(win)
 {
     if(win)
     {
-        winAudio.play();        
+        winAudio.play();
         alert("You Win!");
         location.reload();
     }
