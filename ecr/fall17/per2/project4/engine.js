@@ -54,7 +54,7 @@ function hitMonkey()
 }
 
 function loop(){
-    y = parseInt(monkey0.style.top) - 1 - Math.pow(parseInt(hitVal), 2);
+    y = parseInt(monkey0.style.top) - 1 - Math.pow(parseInt(hitVal), 3);
     if ( y < -100 )
         {
             monkey0.style.backgroundImage = "url('monkey.png')";                           
