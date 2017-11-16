@@ -7,7 +7,8 @@ body{
 	width: 500px;
 	height: 300px;
 	margin: 0 auto;
-	background-color: white;
+	background: url("background.jpg") center center;
+	background-size: 100%;
 	overflow: hidden;
 	cursor: url("crosshair.gif"), crosshair;
 }
@@ -24,6 +25,14 @@ body{
 	color: white;
 	padding: 20px;
 	font-size: 30px;
+	user-select: none;
+}
+
+#instruct
+{
+	color: white;
+	padding: 20px;
+	font-size: 20px;
 	user-select: none;
 }
 
