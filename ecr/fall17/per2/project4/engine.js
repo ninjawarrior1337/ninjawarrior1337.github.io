@@ -35,14 +35,14 @@ function reloacate(){
         lives.innerHTML = "Lives: 0";     
         setTimeout(function(){
             endGame(false);
-        }, 100)
+        }, 50)
     }
     if(hitVal == 3)
     {
         output.innerHTML = "Score: 3";        
         setTimeout(function(){
             endGame(true);
-        }, 100)
+        }, 50)
     }
 }
 
